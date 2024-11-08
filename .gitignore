@@ -3,10 +3,3 @@
 node_modules/
 .vscode/
 firebaseAPI_BBY09.js
-
-# npm
-node_modules
-package-lock.json
-npm-shrinkwrap.json
-*.log
-*.gz

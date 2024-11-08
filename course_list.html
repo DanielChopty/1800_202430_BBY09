@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
-    <title>Home</title>
+    <title>Course List</title>
     <meta name="comp1800 template" content="My 1800 App">
 
     <!-- Required meta tags -->
@@ -31,23 +31,37 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
 
     <!-- Link to styles of your own -->
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body id="home-view">
+<body>
     <!-- Nav Bar-->
     <nav id="navbarPlaceholder"></nav>
-
-    <!-- Calendar from FullCalendar JS library-->
-    <div id="calendar"></div>
+    <p class="text-center">Your Courses</p>
+    <ul class="list-group">
+        <a href="course_grade.html">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Programming Methods - COMP1510
+                <span class="badge bg-primary rounded-pill">85%</span>
+            </li>
+        </a>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Applied Mathematics - COMP1113
+            <span class="badge bg-primary rounded-pill">76%</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Web Development - COMP1537
+            <span class="badge bg-primary rounded-pill">91%</span>
+        </li>
+    </ul>
 
     <!-- Footer -->
     <nav id="footerPlaceholder"></nav>
 
     <!-- Link to scripts of your own -->
-    <script src="js/firebaseAPI_BBY09.js"></script>
-    <script src="js/skeleton.js"></script>
-    <script src="js/calendar.js"></script>
+    <script src="scripts/firebaseAPI_BBY09.js"></script>
+    <script src="scripts/skeleton.js"></script>
+
 </body>
 
 </html>
